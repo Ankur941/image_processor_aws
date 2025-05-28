@@ -1,6 +1,6 @@
 # Image Processing Application
 
-### Fuad Hassan
+### 
 
 ### Oct 22, 2024
 
