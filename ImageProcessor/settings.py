@@ -16,7 +16,9 @@ import os
 from decouple import config,  RepositoryEnv # type: ignore
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+env_path = os.path.join(BASE_DIR, '.env')
+config = config = config(RepositoryEnv(env_path))
 
 
 # Quick-start development settings - unsuitable for production
